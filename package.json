@@ -4,7 +4,7 @@
   "description": "A simple template to work with Node with Express using TypeScript and Jest for testing.",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon dist/index.js\"",
+    "dev": "tsc && concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon dist/index.js\"",
     "start": "tsc && node dist/index.js"
   },
   "keywords": ["TypeScript","Node","Express","Jest"],
